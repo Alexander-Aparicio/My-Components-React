@@ -1,0 +1,12 @@
+.h2 {
+  margin: 0;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: dodgerblue;
+  padding: 0px 3%;
+}
+@media (max-width: 450px) {
+  .h2 {
+    padding: 5px 5%;
+  }
+}

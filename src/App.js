@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Gallery from "./components/Galleries/Gallery";
+import styles from "./App.module.css";
+import Title from "./components/Titles/Title";
+import Code from "./components/code/Code";
+import { JsxGallery } from "./CodeComponents/Galleries/JSXmodelOne";
+import { CssModuleGallery } from "./CodeComponents/Galleries/CSSmodelOne";
+import TitleComponent from "./components/Titles/TitleComponent";
+import Text from "./components/Texts/Text";
+import ProgressBar from "./components/Graphics/ProgressBar";
+import { JsxBarP } from "./CodeComponents/BarProgress/JSXmodelOne";
+import { CssModuleBarP } from "./CodeComponents/BarProgress/CSSmodelOne";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Title />
+      <Text>Mis componentes sencillos de React usando solo modulos CSS.</Text>
+      <TitleComponent>Galería</TitleComponent>
+      <Gallery />
+      <Code title={"Código"}>
+        <>
+          <pre>
+            <h3>JSX</h3>
+            <code>{JsxGallery}</code>
+          </pre>
+          <pre>
+            <h3>CSS</h3>
+            <code>{CssModuleGallery}</code>
+          </pre>
+        </>
+      </Code>
+      <br />
+      <br />
+      <TitleComponent>Barra de progreso</TitleComponent>
+      <ProgressBar />
+      <Code title={"Código"}>
+        <>
+          <pre>
+            <h3>JSX</h3>
+            <code>{JsxBarP}</code>
+          </pre>
+          <pre>
+            <h3>CSS</h3>
+            <code>{CssModuleBarP}</code>
+          </pre>
+        </>
+      </Code>
     </div>
   );
 }

@@ -1,0 +1,39 @@
+.component {
+  width: 100%;
+  background-color: rgb(40, 44, 52);
+  padding: 25px 5%;
+}
+.title {
+  color: rgb(250, 200, 99);
+  width: 100%;
+}
+.component > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 550px));
+  grid-gap: 25px;
+  justify-content: center;
+}
+
+.component > div > pre {
+  max-width: 600px;
+  max-height: 350px;
+  overflow-x: scroll;
+  border: 1px solid #f4f4f4;
+  position: relative;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.component > div > pre > code {
+  color: #f4f4f4;
+}
+.component > div > pre > h3 {
+  color: rgb(250, 200, 99);
+  width: 100%;
+  font-size: 18px;
+  margin: 0;
+}
+@media (max-width: 450px) {
+  .component > div > pre > code {
+    font-size: 12px;
+  }
+}
