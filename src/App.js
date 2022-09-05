@@ -9,6 +9,7 @@ import Text from "./components/Texts/Text";
 import ProgressBar from "./components/Graphics/ProgressBar";
 import { JsxBarP } from "./CodeComponents/BarProgress/JSXmodelOne";
 import { CssModuleBarP } from "./CodeComponents/BarProgress/CSSmodelOne";
+import DivisionOfTheMonth from "./components/DivisionOfTheMonth/DivisionOfTheMonth";
 
 function App() {
   return (
@@ -45,6 +46,12 @@ function App() {
           </pre>
         </>
       </Code>
+      <br />
+      <br />
+      <TitleComponent>Destructurador del mes</TitleComponent>
+      <DivisionOfTheMonth />
+      <br />
+      <br />
     </div>
   );
 }

@@ -1,0 +1,128 @@
+.component {
+  width: 100%;
+  padding: 5%;
+  background: rgb(248, 248, 248);
+  background: linear-gradient(
+    45deg,
+    rgba(248, 248, 248, 1) 0%,
+    rgba(247, 247, 247, 1) 25%,
+    rgba(244, 244, 244, 1) 45%,
+    rgba(245, 245, 245, 1) 69%,
+    rgba(245, 245, 245, 1) 91%
+  );
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 15px 20px;
+  max-width: 250px;
+  align-items: center;
+  align-content: center;
+}
+
+.form > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 250px;
+}
+.form > div > label {
+  font-weight: bold;
+  color: #515151;
+  padding-right: 20px;
+}
+.monthSelect > select {
+  border-radius: 5px;
+  min-width: 130px;
+  padding: 5px 10px;
+  background-color: transparent;
+  outline: inherit;
+  color: #515151;
+}
+.startingDay > input,
+.finalDay > input {
+  width: 40px;
+  border-style: none;
+  border-bottom: solid 1px #0005;
+  background-color: transparent;
+  outline: inherit;
+  color: dodgerblue;
+  outline-style: none;
+}
+.btnSubmit {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.btnSubmit > input {
+  border-radius: 5px;
+  padding: 7px 14px;
+  outline-style: none;
+  cursor: pointer;
+  border-style: none;
+  border: solid 2px dodgerblue;
+  background-color: dodgerblue;
+  color: #fff;
+  transition: 0.2s linear;
+}
+.btnSubmit > button:hover {
+  border: solid 2px #0002;
+}
+.res {
+  display: grid;
+  align-content: center;
+  background-color: rgb(40, 44, 52);
+  padding: 15px 18px;
+  border-radius: 6px;
+  min-width: 250px;
+  border: solid 3px #fff;
+}
+.res h2 {
+  font-size: 18px;
+  color: rgb(250, 200, 99);
+  margin: 0;
+  margin-bottom: 7px;
+}
+.res > ul {
+  margin: 0px;
+  padding: 0;
+}
+.res > ul > li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 3px 0px;
+}
+.res > ul > li > h3 {
+  margin: 0;
+  margin-right: 15px;
+  font-size: 16px;
+  color: #f4f4f4;
+  width: 75px;
+}
+.res > ul > li > span {
+  color: #f4f4f4;
+}
+.res > ul > li > span > strong {
+  color: rgb(250, 200, 99);
+  color: dodgerblue;
+}
+.error {
+  background-color: dodgerblue;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.error > p {
+  font-size: 14px;
+  color: #f4f4f4;
+  margin: 0;
+}
